@@ -14,7 +14,7 @@ const MovieList = () => {
 
   return (
     <View>
-      <Button title="Fetch Movies" onPress={() => dispatch(fetchMovies())} />
+      <Button title="Get Movies" onPress={() => dispatch(fetchMovies())} />
       {movies.map(movie => (
         <Text key={movie.id}>{movie.title}</Text>
       ))}
